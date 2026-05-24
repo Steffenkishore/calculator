@@ -12,7 +12,10 @@ function checkScreenWidth() {
 
   if (numberLength >= 18) {
     alert("Calculator reached maximum values!!");
+    return false;
   }
+
+  return true;
 }
 
 function equalTo() {
@@ -55,110 +58,126 @@ function equalTo() {
 }
 
 function one() {
-  let prevNum = displayEl.textContent;
-  displayEl.textContent = prevNum + 1;
-  checkScreenWidth();
+  if (checkScreenWidth()) {
+    let prevNum = displayEl.textContent;
+    displayEl.textContent = prevNum + 1;
+  }   
 }
 
 function two() {
-  let prevNum = displayEl.textContent;
-  displayEl.textContent = prevNum + 2;
-  checkScreenWidth();
+  if (checkScreenWidth()) {
+    let prevNum = displayEl.textContent;
+    displayEl.textContent = prevNum + 2;
+  }   
 }
 
 function three() {
-  let prevNum = displayEl.textContent;
-  displayEl.textContent = prevNum + 3;
-  checkScreenWidth();
+  if (checkScreenWidth()) {
+    let prevNum = displayEl.textContent;
+    displayEl.textContent = prevNum + 3;
+  }   
 }
 
 function four() {
-  let prevNum = displayEl.textContent;
-  displayEl.textContent = prevNum + 4;
-  checkScreenWidth();
+  if (checkScreenWidth()) {
+    let prevNum = displayEl.textContent;
+    displayEl.textContent = prevNum + 4;
+  }   
 }
 
 function five() {
-  let prevNum = displayEl.textContent;
-  displayEl.textContent = prevNum + 5;
-  checkScreenWidth();
+  if (checkScreenWidth()) {
+    let prevNum = displayEl.textContent;
+    displayEl.textContent = prevNum + 5;
+  }   
 }
 
 function six() {
-  let prevNum = displayEl.textContent;
-  displayEl.textContent = prevNum + 6;
-  checkScreenWidth();
+  if (checkScreenWidth()) {
+    let prevNum = displayEl.textContent;
+    displayEl.textContent = prevNum + 6;
+  }   
 }
 
 function seven() {
-  let prevNum = displayEl.textContent;
-  displayEl.textContent = prevNum + 7;
-  checkScreenWidth();
+  if (checkScreenWidth()) {
+    let prevNum = displayEl.textContent;
+    displayEl.textContent = prevNum + 7;
+  }   
 }
 
 function eight() {
-  let prevNum = displayEl.textContent;
-  displayEl.textContent = prevNum + 8;
-  checkScreenWidth();
+  if (checkScreenWidth()) {
+    let prevNum = displayEl.textContent;
+    displayEl.textContent = prevNum + 8;
+  }   
 }
 
 function nine() {
-  let prevNum = displayEl.textContent;
-  displayEl.textContent = prevNum + 9;
-  checkScreenWidth();
+  if (checkScreenWidth()) {
+    let prevNum = displayEl.textContent;
+    displayEl.textContent = prevNum + 9;
+  }   
 }
 
 function zero() {
-  let prevNum = displayEl.textContent;
-  displayEl.textContent = prevNum + 0;
-  checkScreenWidth();
+  if (checkScreenWidth()) {
+    let prevNum = displayEl.textContent;
+    displayEl.textContent = prevNum + 0;
+  }     
 }
 
 function btnAC() {
   displayEl.textContent = "";
   currentValue = 0;
-  checkScreenWidth();
+  
 }
 
 function btnDel() {
   let prevNum = displayEl.textContent;
   let newNum = prevNum.slice(0, -1);
   displayEl.textContent = newNum;
-  checkScreenWidth();
+  
 }
 
 function btnDot() {
-  let prevNum = displayEl.textContent;
-  displayEl.textContent = prevNum + ".";
-  checkScreenWidth();
+  if (checkScreenWidth()) {
+    let prevNum = displayEl.textContent;
+    displayEl.textContent = prevNum + ".";
+  }   
 }
 
 function btnDivide() {
-  let prevContent = displayEl.textContent;
-  displayEl.textContent = prevContent + "/";
-  checkScreenWidth();
+  if (checkScreenWidth()) {
+    let prevNum = displayEl.textContent;
+    displayEl.textContent = prevNum + '/';
+  }   
 }
 
 function btnAdd() {
-  let prevContent = displayEl.textContent;
-  displayEl.textContent = prevContent + "+";
-  checkScreenWidth();
+  if (checkScreenWidth()) {
+    let prevNum = displayEl.textContent;
+    displayEl.textContent = prevNum + "+";
+  }   
 }
 
 function btnSub() {
-  let prevContent = displayEl.textContent;
-  displayEl.textContent = prevContent + "-";
-  checkScreenWidth();
+ if (checkScreenWidth()) {
+   let prevNum = displayEl.textContent;
+   displayEl.textContent = prevNum + "-";
+ }   
 }
 
 function btnMultiply() {
-  let prevContent = displayEl.textContent;
-  displayEl.textContent = prevContent + "*";
-  checkScreenWidth();
+  if (checkScreenWidth()) {
+    let prevNum = displayEl.textContent;
+    displayEl.textContent = prevNum + "*";
+  }   
 }
 
 function btnModulus() {
-  let prevContent = displayEl.textContent;
-  displayEl.textContent = prevContent + "%";
-  checkScreenWidth();
+  if (checkScreenWidth()) {
+    let prevNum = displayEl.textContent;
+    displayEl.textContent = prevNum + "/";
+  }
 }
